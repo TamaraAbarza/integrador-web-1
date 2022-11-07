@@ -30,6 +30,7 @@ function validar() {
         alert("ingrese un número de teléfono");
         document.form.numero.focus();
         document.form.numero.className = "incorrecto";
+        return false;
     } else {
         document.form.nombre.className = "form-item";
     }
