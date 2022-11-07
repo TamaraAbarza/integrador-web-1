@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin:0;
+}
+.barra-navegacion {
+    background: black;
+    margin: 0;
+   position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*border-bottom:1px solid white;*/
+}
+
+.barra-navegacion ul li {
+    display: inline-block;
+
+}
+
+.barra-navegacion ul li a {
+    color: white;
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.barra-navegacion li a:hover {
+    background-color:  #a79e8c;
+}

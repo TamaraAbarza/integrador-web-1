@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Servicios</title>
+    <script>
+        function validar2() {
+            var patronmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var email = document.suscribirse.email.value;
+
+            if (!patronmail.test(email)) {
+                alert("Debe ingresar un email valido");
+                document.suscribirse.email.focus();
+                return false;
+            }
+            alert("¡Gracias por suscribirte, pronto te enviaremos novedades!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+
+            <img src="img/fotos/maquillando.jpg" alt="">
+            <h3>Nuestros servicios</h3>
+            <p class="descripcion">¿Necesitas contratar un maquillaje y peinado para una ocasión especial?.<br>
+                Ahora tenes disponibles los mejores servicios de maquillaje + peinado para cualquier evento y ocasión.</p>
+        </div>
+
+        <div class="contenedor-servicio">
+            <div class="servicio">
+                <img class="imagen-servicio" src="img/fotos/Maquillaje1.jpeg">
+                <h3 class="titulo-servicio">Maquillaje social</h3>
+                <p class="descripcion-servicio">El maquillaje social es el arte de enmarcar la belleza natural
+                    de una mujer. El maquillaje social diferencia que cada mujer es única y debe destacar su
+                    estilo personal.</p>
+            </div>
+            <div class="servicio">
+                <img class="imagen-servicio" src="img/fotos/Maquillaje2.jpeg" alt="">
+                <h3 class="titulo-servicio">Maquillaje para moda editorial y gráfica</h3>
+                <p class="descripcion-servicio">
+                    Hemos trabajado con los mejores fotógrafos y productores de moda del país. Nos enfocamos 100% en los
+                    looks y la estética buscada.</p>
+            </div>
+            <div class="servicio">
+                <img class="imagen-servicio" src="img/fotos/Maquillaje3.webp" alt="">
+                <h3 class="titulo-servicio">Maquillaje de novias</h3>
+                <p class="descripcion-servicio">Como maquilladora profesional, el maquillaje de novia es una de mis
+                    especialidades. Con años de experiencia en maquillaje para bodas, infórmate de todos mis servicios
+                </p>
+            </div>
+            <div class="servicio">
+                <img class="imagen-servicio" src="img/fotos/Maquillaje6.jpg" alt="">
+                <h3 class="titulo-servicio">Maquillaje para eventos</h3>
+                <p class="descripcion-servicio">
+                    Como maquilladora profesional, el maquillaje para todo tipo de
+                    eventos es una de mis especialidades. Con años de experiencia en maquillaje para eventos al
+                    mejor precio infórmate de todos mis servicios.</p>
+            </div>
+            <div class="servicio">
+                <img class="imagen-servicio" src="img/fotos/Maquillaje4.jpeg" alt="">
+                <h3 class="titulo-servicio">Curso básico de automaquillaje</h3>
+                <p class="descripcion-servicio">Curso básico de automaquillaje donde
+                    hacemos más énfasis en la preparación e hidratación de la piel para conseguir un maquillaje
+                    natural impecable.</p>
+            </div>
+            <div class="servicio">
+                <img class="imagen-servicio" src="img/fotos/Maquillaje5.jpg" alt="">
+                <h3 class="titulo-servicio">Curso avanzado de automaquillaje</h3>
+                <p class="descripcion-servicio">Con el curso completo aprenderás técnicas avanzadas de maquillaje y el
+                    uso
+                    adecuado de
+                    cosméticos y brochas, para un look completo espectacular.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="informacion">
+            <h3>Dirección</h3>
+            <p>9 de Julio, San Luis, Argentina</p>
+            <h3>Contacto</h3>
+            <p>+54 9 26 6498 1690</p>
+        </div>
+        <div class="redes">
+            <ul>
+                <h3>Seguinos en:</h3>
+                <li><a href="https://www.instagram.com/frumboliestudio/" target="_blank"><img
+                            src="img/iconos/instagram.png" class="redes-icono" alt=""></a></li>
+                <li><a href="https://www.facebook.com/bettinafrumboliestudio" target="_blank"><img
+                            src="img/iconos/facebook.png" class="redes-icono" alt=""></a></li>
+                <li><a href="https://www.youtube.com/user/bettinafrumboli" target="_blank"><img
+                            src="img/iconos/youtube.png" class="redes-icono" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="suscribirse">
+            <h3>Suscribite para recibir novedades</h3>
+            <form name="suscribirse" class="form-suscribirse" action="" method="get">
+                <input type="text" id="email" placeholder="Ingresá tu email">
+                <input type="submit" id="boton" value="Suscribirse" onclick="return validar2();">
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

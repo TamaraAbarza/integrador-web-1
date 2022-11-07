@@ -1,0 +1,88 @@
+ /*colores
+        rosa,naranja,amarillo,amarilloclaro,verde, verdelimon: #e8d536
+        #ff1266;#ff9321;#ffd534;#faff81; color: #dbffc3;}
+        */
+ .titulo {
+     display: block;
+     background: black;
+     margin:0;
+     padding: 0;
+     height: 600px;
+ }
+
+ .titulo h3 {
+    background-color: black;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: normal;
+     color: white;
+     /*text-transform: uppercase;*/
+     padding: 100px 0 0 0;
+     font-size: 35px;
+     margin-top: 58px;
+     color: white;
+
+ }
+ 
+ .titulo img{
+    height: 560px;
+    float: left;
+    margin-right: 80px;
+ }
+
+ .titulo p {
+     color: #a79e8c;
+     font-size: 30px;
+     font-family: 'Quicksand', sans-serif;
+     margin-top:100px;
+     margin-right: 80px;
+ }
+
+ .contenedor-servicio {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1f1 1f1;
+     width: 1000px;
+     margin: 40px auto;
+     margin-bottom: 0;
+ }
+
+ .servicio {
+     width: 300px;
+     background: linear-gradient(160deg, #ffd534, #ff9321, #ff1266);
+     /*border: 1px solid black;*/
+     margin: 0 auto;
+     margin-bottom: 40px;
+     box-shadow: 5px 5px 20px black;
+     /*#ff7844;*/
+ }
+
+ .imagen-servicio {
+     width: 300px;
+ }
+
+ .titulo-servicio {
+     text-align: center;
+     padding: 20px;
+     font-family: 'Libre Bodoni', serif;
+ }
+
+ .descripcion-servicio {
+     padding: 20px;
+     text-align: left;
+     visibility: hidden;
+     position: absolute;
+     width: 260px;
+     bottom: 71px;
+     background-color: rgb(27, 27, 27, .5);
+     color: white;
+     font-family: 'Quicksand', sans-serif;
+ }
+
+ .servicio:hover {
+     transform: scale(1.1);
+     cursor: pointer;
+ }
+
+ .servicio:hover .descripcion-servicio {
+     visibility: visible;
+ }

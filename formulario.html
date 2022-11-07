@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <script type="text/javascript" src="js/validar.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Contacto</title>
+    <script>
+        function validar2() {
+            var patronmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var email = document.suscribirse.email.value;
+
+            if (!patronmail.test(email)) {
+                alert("Debe ingresar un email valido");
+                document.suscribirse.email.focus();
+                return false;
+            }
+            alert("¡Gracias por suscribirte, pronto te enviaremos novedades!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="barra-navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="h3-form">Comunicate con nosotros, te responderemos a la brevedad.<h3>
+                <p class="parrafo-form">Podes hacer una consulta general, por detalles que necesites de los servicios o
+                    por los cursos.</p>
+                <section class="contacto">
+
+                    <div class="formulario">
+                        <h2 class="form-titulo">¡Escribinos!</h2>
+                        <form name="form" action="#" method="get">
+                            <input class="form-item" type="text" name="nombre" placeholder="Nombre"><br>
+                            <input class="form-item" type="email" name="email" placeholder="Email"><br>
+                            <input class="form-item" type="number" name="numero" placeholder="Teléfono"><br>
+                            <textarea class="form-item" id="mensaje" cols="30" rows="10"
+                                placeholder="Mensaje"></textarea>
+                            <input id="form-boton" type="submit" onclick=" return validar();" value="Enviar">
+                        </form>
+                    </div>
+
+                    <div class="prueba-div">
+
+                        <div class="mapa">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53348.698971950296!2d-66.42723441123961!3d-33.31113674255144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43bdf54177323%3A0x2d07469d42ee6071!2sUnicas%20-%20Salon%20De%20Belleza%20-!5e0!3m2!1ses-419!2sar!4v1667285191118!5m2!1ses-419!2sar"
+                                width="940" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="info">
+                            <ul class="info-izquierda">
+                                <li><img src="img/iconos/marker.png" class="info-icono" alt=""> 9 de Julio, San Luis
+                                </li>
+                                <li><img src="img/iconos/envelope.png" class="info-icono" alt="">
+                                    makeuprofesional@gmail.com</li>
+                                <li> <img src="img/iconos/phone-call.png" class="info-icono" alt=""> +54 9 26 6498 1690
+                                </li>
+                            </ul>
+                            <ul class="info-derecha">
+                                <li><a href="https://www.instagram.com/frumboliestudio/" target="_blank"><img src="img/iconos/instagram.png" class="info-icono" alt="">
+                                        Instagram</a></li>
+                                <li><a href="https://www.facebook.com/bettinafrumboliestudio" target="_blank"><img src="img/iconos/facebook.png" class="info-icono" alt="">
+                                        Facebook</a></li>
+                                <li><a href="https://www.youtube.com/user/bettinafrumboli" target="_blank"><img src="img/iconos/youtube.png" class="info-icono" alt=""> Youtube</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </section>
+    </main>
+
+
+    <footer>
+        <div class="informacion">
+            <h3>Dirección</h3>
+            <p>9 de Julio, San Luis, Argentina</p>
+            <h3>Contacto</h3>
+            <p>+54 9 26 6498 1690</p>
+        </div>
+        <div class="redes">
+            <ul>
+                <h3>Seguinos en:</h3>
+                <li><a href="https://www.instagram.com/frumboliestudio/" target="_blank"><img
+                            src="img/iconos/instagram.png" class="redes-icono" alt=""></a></li>
+                <li><a href="https://www.facebook.com/bettinafrumboliestudio" target="_blank"><img
+                            src="img/iconos/facebook.png" class="redes-icono" alt=""></a></li>
+                <li><a href="https://www.youtube.com/user/bettinafrumboli" target="_blank"><img
+                            src="img/iconos/youtube.png" class="redes-icono" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="suscribirse">
+            <h3>Suscribite para recibir novedades</h3>
+            <form name="suscribirse" class="form-suscribirse" action="" method="get">
+                <input type="text" id="email" placeholder="Ingresá tu email">
+                <input type="submit" id="boton" value="Suscribirse" onclick="return validar2();">
+            </form>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

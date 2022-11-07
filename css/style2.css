@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(250, 248, 248);
+}
+
+.h3-form {
+    padding-top: 20px;
+    color: #2a4139;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.parrafo-form {
+    color:  #51655b;
+    text-align: center;
+   
+}
+
+.contacto {
+    width: 100%;
+    background-color: rgb(250, 248, 248);
+    position: relative;
+    padding: 30px 0;
+
+}
+
+.formulario {
+    width: 400px;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    /*border-radius: 10px;*/
+}
+
+.form-titulo {
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+    color: #2a4139;
+}
+
+form {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0;
+
+}
+
+
+.form-item {
+    display: block;
+    padding: 10px 25px;
+    width: 300px;
+    background-color: lightgray;
+    /*whitesmoke;*/
+    border-style: none;
+}
+
+#mensaje {
+    overflow: auto;
+    resize: none;
+    font-size: 20px;
+    height: 150px;
+}
+
+#form-boton {
+    display: block;
+    padding: 10px 25px;
+    width: 350px;
+    margin: 20px 0 0 0;
+    background-color: #ff7844;
+    /* #0e0e0e #122222 #1b4544 #2a4139 */
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#form-boton:hover {
+    background: linear-gradient(160deg, #ffd534, #ff9321, #ff1266);
+}
+
+.prueba-div {
+   /* background: linear-gradient(160deg,#e8d536 #ff7844, #ff1266);*/
+    background-color: #e8d536;
+    width: 90%;
+    height: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.mapa {
+    width: 100%;
+    padding-top:35px;
+    top: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.info {
+    position: relative;
+    align-items: left;
+    width: 90%;
+}
+
+.info ul {
+    display: inline-block;
+    padding: 0;
+    margin: 20px 55px 0 0;
+}
+
+.info li {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    list-style: none;
+}
+
+.info-icono {
+    width: 15px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.info a:hover {
+    color: #2a4139;
+}
